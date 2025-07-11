@@ -11,7 +11,7 @@ PIPELINE_NAME:str="NetworkSecurity"
 FILE_NAME:str="NetworkData.csv"
 TEST_FILE:str="test.csv"
 TRAIN_FILE:str="train.csv"
-
+SCHEMA_PATH:str=os.path.join("data_schema","schema.yaml")
 
 
 DATA_INGESTION_COLLECTION_NAME:str="phisingData"
@@ -20,3 +20,11 @@ DATA_INGESTION_DIR_NAME:str="data_ingestion"
 DATA_INGESTION_FEATURE_STORE_NAME:str="feature_store"
 DATA_INGESTION_INGESTED_DIR:str="ingested"
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO:float=0.2
+
+
+DATA_VALIDATION_DIR_NAME:str="data_validation"
+DATA_VALIDATION_VALID_DIR:str="validated"
+DATA_VALIDATION_INVALID_DIR:str="invalidated"
+DATA_VALIDATION_DRIFT_DIR:str="drift_report"
+DATA_VALIDATION_DRIFT_REPORT_FILE:str="report.yaml"
+
