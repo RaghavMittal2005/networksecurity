@@ -28,3 +28,13 @@ DATA_VALIDATION_INVALID_DIR:str="invalidated"
 DATA_VALIDATION_DRIFT_DIR:str="drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE:str="report.yaml"
 
+DATA_TRANSFORMATION_DIR:str="data_transformation"
+DATA_TRANSFORMATION_OBJECT_DIR:str="transformed_object"
+DATA_TRANSFORMATION_DATA_DIR:str="transformed_data"
+PREPROCESS_FILE:str="preprocessing.pkl"
+DATA_TRANSFORMATION_PARAMS:dict={
+    "missing_values":np.nan,
+    "weights":"uniform",
+    "n_neighbors":3
+}
+
