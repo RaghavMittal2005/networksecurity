@@ -38,3 +38,11 @@ DATA_TRANSFORMATION_PARAMS:dict={
     "n_neighbors":3
 }
 
+MODEL_TRAINER_DIR:str="model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR:str="trained_model"
+MODEL_TRAINER_TRAINED_MODEL_FILE:str="model.pkl"
+MODEL_EXPECTED_ACCURACY:float=0.6
+MODEL_OVERFITTING_THRESH:float=0.05
+
+SAVED_MODEL_DIR:str="saved_model"
+MODEL_FILE_NAME:str="model.pkl"

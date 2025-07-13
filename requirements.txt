@@ -6,3 +6,4 @@ pymongo[srv]
 python-dotenv
 scikit-learn
 pyaml
+mlflow
