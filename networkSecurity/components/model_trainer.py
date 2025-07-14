@@ -14,6 +14,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier,GradientBoostingClassifier,AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 import mlflow
+import dagshub
+dagshub.init(repo_owner='RaghavMittal2005', repo_name='networksecurity', mlflow=True)
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
@@ -96,6 +98,9 @@ class ModelTrainer:
             
             Network_model=NetworkModel(processor=preprocessor,model=best_model)
             save_obj(self.model_trainer_config.trained_model_file,obj=Network_model)
+
+            save_obj("final_models/model.pkl",best_model)
+            save_obj("final_models/preprocessor.pkl",preprocessor)
 
             model_trainer_artifact=ModelTrainerArtifact(
                 
